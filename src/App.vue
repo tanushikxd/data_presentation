@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+    <header-component></header-component>
+    <router-view></router-view>
+    <background-component></background-component>
+    <!-- <about-page></about-page>
+    <projects-page></projects-page>
+    <skills-page></skills-page>
+    <elevator-components></elevator-components> -->
   </div>
 </template>
 
+<script>
+import HeaderComponent from "./modules/header/Header-component.vue";
+// import MainPage from "./modules/main/Main-page.vue";
+import BackgroundComponent from "./modules/main/Background-component.vue";
+// import ProjectsPage from "./modules/projects/Projects-page.vue";
+// import SkillsPage from "./modules/skills/Skills-page.vue";
+// import ElevatorComponents from "./modules/main/components/Elevator-components.vue";
+// import AboutPage from "./modules/about/About-page.vue";
+
+export default {
+  components: {
+    HeaderComponent,
+    // MainPage,
+    BackgroundComponent,
+    // ProjectsPage,
+    // SkillsPage,
+    // ElevatorComponents,
+    // AboutPage,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import "./assets/css/global.scss";
+@import "./assets/css/vars.scss";
 </style>

@@ -1,0 +1,153 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+/* ===== TITLE (top center) ===== */
+.about_title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  // border-bottom: 3px solid #007bff;
+  // padding-bottom: 0.5rem;
+  // width: fit-content;
+}
+
+// .about_details-me_name {
+//   font-size: 1.8rem;
+//   margin-bottom: 1.5rem;
+//   color: #333;
+//   position: relative;
+//   display: inline-block; /* keeps the underline tight under the text */
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: -15px; /* space between text and line */
+//     width: 100%;
+//     height: 3px;
+//     border-radius: 4px;
+//     background: linear-gradient(90deg, #007bff, #00c6ff);
+//   }
+// }
+
+/* ===== MAIN FLEX CONTAINER ===== */
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+/* ===== LEFT SIDE (TEXT BOX) ===== */
+.about_text {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+  border: 2px solid #007bff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.1);
+  }
+}
+
+.about_details-me_name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about_details-me_name-intro_text {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+.about_buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #e9ecef;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #003d80;
+  }
+}
+
+.btn-secondary {
+  background-color: #e9ecef;
+  color: #333;
+
+  &:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #0056b3;
+  }
+}
+
+/* ===== RIGHT SIDE (PHOTO) ===== */
+.about_image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about_image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  border: 2px solid #007bff;
+  object-fit: cover;
+}
+
+/* ===== RESPONSIVE (stack on small screens) ===== */
+@media (max-width: 768px) {
+  .about_container {
+    flex-direction: column;
+  }
+
+  .about_title {
+    font-size: 2.2rem;
+  }
+
+  .about_text {
+    text-align: center;
+  }
+
+  .about_details-me_name-intro_text {
+    text-align: left;
+  }
+}
