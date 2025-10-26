@@ -1,5 +1,5 @@
 .contact {
-  background: #0f172a;
+  // background: #0f172a;
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;
@@ -65,6 +65,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       font-size: 1rem;
+      width: 100%;
 
       &:hover {
         background: #0ea5e9;
@@ -73,8 +74,14 @@
 
     .success {
       margin-top: 1rem;
-      color: #22c55e;
+      color: #e40816;
       font-weight: 500;
     }
   }
 }
+
+// @media (max-width: 768px) {
+//   .contact_form {
+//     margin: 0 20px 0 0;
+//   }
+// }

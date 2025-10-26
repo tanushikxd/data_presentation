@@ -1,5 +1,21 @@
-.projects{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.projects {
+  padding: 20px;
+  text-align: center;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  padding: 16px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+a {
+  color: #42b983;
+  text-decoration: none;
+  font-weight: bold;
 }
