@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
+import Home from "../modules/main/Main-page.vue";
 import About from "../modules/about/About-page.vue";
 import Skills from "../modules/skills/Skills-page.vue";
 import Projects from "../modules/projects/Projects-page.vue";
@@ -12,6 +13,11 @@ import Contact from "../modules/contact/Contact-page.vue";
 export default new VueRouter({
   mode: "history",
   routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home,
+    },
     {
       path: "/about",
       name: "about",
