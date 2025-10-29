@@ -1,37 +1,55 @@
 <template>
-  <div class="stars-container" ref="starsContainer"></div>
+  <div class="stars-container">
+    <div
+      v-for="(star, index) in starArray"
+      :key="index"
+      class="star"
+      :style="{
+        left: star.left,
+        top: star.top,
+        width: star.size,
+        height: star.size,
+        animationDuration: star.duration,
+        animationDelay: star.delay,
+      }"
+    ></div>
+  </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { ref, onMounted } from "vue";
 
-const starsContainer = ref(null);
+// variables for star creation
+const TOTAL_STARS = 150;
+const MIN_SIZE = 1; // min star size (px)
+const MAX_SIZE = 5; // max star size (px)
+const MIN_DURATION = 10; // min animation gap in sec
+const MAX_DURATION = 20; // max animation gap in sec
+const MAX_DELAY = 10; // max animation delay in sec
 
-function createStars() {
-  const numStars = 150;
-  const container = starsContainer.value;
-  if (!container) return;
+const starArray = ref([]);
 
-  for (let i = 0; i < numStars; i++) {
-    const star = document.createElement("div");
-    star.className = "star";
-    star.style.left = `${Math.random() * 100}%`;
-    star.style.top = `${Math.random() * 100}%`;
+// random number between min and max
+const randomBetween = (min, max) => Math.random() * (max - min) + min;
 
-    // speed and sizes
-    const size = Math.random() * 4 + 1;
-    star.style.width = star.style.height = `${size}px`;
-    // star.style.animationDuration = `${Math.random() * 3 + 2}s`;
-    star.style.animationDuration = `${Math.random() * 10 + 10}s`;
+// Function to create a single star object
+const createStar = () => ({
+  left: `${randomBetween(0, 100)}%`,
+  top: `${randomBetween(0, 100)}%`,
+  size: `${randomBetween(MIN_SIZE, MAX_SIZE)}px`,
+  duration: `${randomBetween(MIN_DURATION, MAX_DURATION)}s`,
+  delay: `${randomBetween(0, MAX_DELAY)}s`,
+});
 
-    star.style.animationDelay = `${Math.random() * 10}s`;
+// star field
+const createStarField = () => {
+  // fill array with star objects
+  starArray.value = Array.from({ length: TOTAL_STARS }, createStar);
+};
 
-    container.appendChild(star);
-  }
-}
-
+// mount component and run it
 onMounted(() => {
-  createStars();
+  createStarField();
 });
 </script>
 

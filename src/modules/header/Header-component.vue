@@ -64,7 +64,7 @@ export default {
   },
   watch: {
     $route() {
-      this.closeMenu(); //menu would close at any click
+      this.menuOpen = false;
     },
   },
 };
