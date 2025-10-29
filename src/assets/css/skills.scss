@@ -20,7 +20,7 @@
 
   .skills_icons {
     display: grid;
-    grid-template-columns: repeat(4, minmax(80px, 1fr)); // автоматическая адаптация
+    grid-template-columns: repeat(4, minmax(80px, 1fr)); // grid adaptation
     gap: 4rem;
     justify-items: center;
     align-items: center;
@@ -36,12 +36,12 @@
       }
 
       &.white {
-        filter: brightness(0) invert(1) !important; // делает иконку белой
+        filter: brightness(0) invert(1) !important; // set icon background to white
       }
     }
   }
 
-  // Немного адаптива
+  
   @media (max-width: 768px) {
     .skills_icons {
       grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));

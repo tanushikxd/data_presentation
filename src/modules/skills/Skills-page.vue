@@ -6,71 +6,84 @@
         <div class="skills_icons">
           <img
             src="@/assets/icons/bootstrap-original.svg"
-            alt=""
+            alt="Bootstrap"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/css3-original.svg"
-            alt=""
+            alt="CSS"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/html5-original.svg"
-            alt=""
+            alt="HTML"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/icons8-vue-js.svg"
-            alt=""
+            alt="VUE.JS"
             class="skills_icons-img"
           />
-          <img src="@/assets/icons/git.svg" alt="" class="skills_icons-img" />
+          <img
+            src="@/assets/icons/git.svg"
+            alt="GIT"
+            class="skills_icons-img"
+          />
           <img
             src="@/assets/icons/github.svg"
-            alt=""
+            alt="Github"
             class="skills_icons-img white"
           />
           <img
             src="@/assets/icons/gitlab.svg"
-            alt=""
+            alt="GitLab"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/icons8-excel.svg"
-            alt=""
+            alt="Excel"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/icons8-power-bi.svg"
-            alt=""
+            alt="PowerBI"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/icons8-tableau-software.svg"
-            alt=""
+            alt="Tableau"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/icons8-wordpress.svg"
-            alt=""
+            alt="Wordpress"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/vscode.svg"
-            alt=""
+            alt="VScode"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/scss-svgrepo-com.svg"
-            alt=""
+            alt="SCSS"
             class="skills_icons-img"
           />
           <img
             src="@/assets/icons/photoshop.svg"
-            alt=""
+            alt="Photoshop"
             class="skills_icons-img"
           />
-          <img src="@/assets/icons/figma.svg" alt="" class="skills_icons-img" />
+          <img
+            src="@/assets/icons/figma.svg"
+            alt="Figma"
+            class="skills_icons-img"
+          />
+          <img
+            src="@/assets/icons/python.svg"
+            alt="Python"
+            class="skills_icons-img"
+          />
         </div>
       </div>
     </main>

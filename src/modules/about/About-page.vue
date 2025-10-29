@@ -22,7 +22,7 @@
           impact.
         </p>
         <div class="about_buttons">
-          <button class="btn">Get in touch</button>
+          <button @click="getElevator" class="btn">Learn about me</button>
           <button @click="downloadResume" class="btn btn-secondary">
             Learn my CV
           </button>
@@ -34,11 +34,12 @@
         <img src="../../assets/images/img/my_photo.jpg" alt="Tatyana Li" />
       </div>
     </div>
-    <elevator-component></elevator-component>
+    <elevator-component v-if="showElevator" @close="showElevator = false" />
   </section>
 </template>
 
 <script>
+import { ref } from "vue";
 import ElevatorComponent from "../main/components/Elevator-component.vue";
 export default {
   components: { ElevatorComponent },
@@ -53,6 +54,12 @@ function downloadResume() {
   link.download = "My CV";
   link.target = "_blank";
   link.click();
+}
+
+const showElevator = ref(false);
+
+function getElevator() {
+  showElevator.value = true;
 }
 </script>
 

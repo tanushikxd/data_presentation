@@ -5,8 +5,6 @@
   min-height: 100vh;
   padding: 3rem 2rem;
 }
-
-/* ===== TITLE (top center) ===== */
 .about_title {
   font-size: 2.8rem;
   font-weight: 700;
@@ -37,7 +35,7 @@
 //   }
 // }
 
-/* ===== MAIN FLEX CONTAINER ===== */
+
 .about_container {
   display: flex;
   align-items: center;
@@ -48,7 +46,7 @@
   flex-wrap: wrap; /* for responsiveness */
 }
 
-/* ===== LEFT SIDE (TEXT BOX) ===== */
+
 .about_text {
   flex: 1;
   min-width: 320px;
@@ -74,9 +72,10 @@
 .about_details-me_name-intro_text {
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  overflow-y: auto;
 }
 
-/* ===== BUTTONS ===== */
+
 .about_buttons {
   display: flex;
   gap: 1rem;
@@ -117,7 +116,7 @@
   }
 }
 
-/* ===== RIGHT SIDE (PHOTO) ===== */
+
 .about_image {
   flex: 1;
   min-width: 300px;
@@ -133,7 +132,7 @@
   object-fit: cover;
 }
 
-/* ===== RESPONSIVE (stack on small screens) ===== */
+
 @media (max-width: 768px) {
   .about_container {
     flex-direction: column;

@@ -1,6 +1,10 @@
 <template>
   <div class="projects">
     <h1>My project</h1>
+    <p class="projects_into">
+      Here, I'd like to show you little part of the work I've done so far. It's
+      not something inredible, but I've put lot of hardwork for it!
+    </p>
     <div class="projects-list">
       <div v-for="project in projects" :key="project.id" class="project-card">
         <h2>{{ project.title }}</h2>
@@ -22,6 +26,12 @@ export default {
           title: "Superstore data",
           description: "Different tools been used for this project",
           link: "https://github.com/tanushikxd/data_presentation_visuals",
+        },
+        {
+          id: 2,
+          title: "Netflix data",
+          description: "How trends on Netflix was changing with a time",
+          link: "https://github.com/tanushikxd/netflix_dataset",
         },
       ],
     };

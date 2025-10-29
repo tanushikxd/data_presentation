@@ -18,7 +18,7 @@ function createStars() {
     star.style.left = `${Math.random() * 100}%`;
     star.style.top = `${Math.random() * 100}%`;
 
-    // разные размеры и скорости
+    // speed and sizes
     const size = Math.random() * 4 + 1;
     star.style.width = star.style.height = `${size}px`;
     // star.style.animationDuration = `${Math.random() * 3 + 2}s`;

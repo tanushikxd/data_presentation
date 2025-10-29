@@ -1,24 +1,20 @@
 <template>
   <section class="hero">
     <div class="hero_container">
-      <!-- Фото -->
       <div class="hero_photo">
         <img src="@/assets/images/img/my_photo.jpg" alt="Tatyana Li" />
       </div>
 
-      <!-- Текст -->
       <div class="hero_text">
         <h1 class="hero_title">Tatyana Li</h1>
         <p class="hero_subtitle">
           Junior Data Technician & Front-End Developer
         </p>
 
-        <!-- Интерактивное описание -->
         <p class="hero_description">
           {{ currentText }}
         </p>
 
-        <!-- Соцсети -->
         <div class="hero_socials">
           <a
             href="https://github.com/tanushikxd"
@@ -108,7 +104,7 @@ export default {
       setInterval(() => {
         this.currentIndex = (this.currentIndex + 1) % this.texts.length;
         this.currentText = this.texts[this.currentIndex];
-      }, 3000); // меняется каждые 3 секунды
+      }, 3000); // change every 3 secs
     },
   },
 };

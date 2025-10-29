@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <header class="wrapper">
-        <nav class="nav">
+        <nav class="nav" :class="{ active: menuOpen }">
           <ul class="nav-menu">
             <li class="nav-menu_item">
               <router-link to="/main" class="nav-menu_item-link"
@@ -57,6 +57,14 @@ export default {
   methods: {
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
+    },
+    closeMenu() {
+      this.menuOpen = false;
+    },
+  },
+  watch: {
+    $route() {
+      this.closeMenu(); //menu would close at any click
     },
   },
 };

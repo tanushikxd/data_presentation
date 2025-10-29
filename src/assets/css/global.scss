@@ -60,3 +60,8 @@ button {
   max-width: 1236px;
   margin: 0 auto;
 }
+input,
+textarea,
+button {
+  box-sizing: border-box;
+}

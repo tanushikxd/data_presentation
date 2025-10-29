@@ -1,15 +1,8 @@
 <template>
-  <section class="elevator">
-    <div class="elevator_container">
-      <h2 class="elevator_container-title">Elevator Pitch</h2>
-      <p class="elevator_container-title_info">
-        Hi, I’m Tatyana Li, a Liverpool-based Data Technician and Front-End
-        Developer. I hold a BA in Journalism (2012) and am currently enhancing
-        my skills through the Just IT Data Technician Bootcamp (2025), where I’m
-        mastering data modeling, SQL, Power BI, Python, and data
-        visualization—skills I’m passionate by how data analytics tools can to
-        turn raw data into actionable insights.
-      </p>
+  <div class="elevator-overlay">
+    <div class="elevator-content">
+      <button class="close-btn" @click="$emit('close')">×</button>
+      <h2>Who Am I?</h2>
       <p class="elevator_container-title_info info1">
         With over a decade of work history, including creative and tech roles
         such as Front-End Developer at Init.kz (2023), where I optimized web
@@ -32,7 +25,7 @@
         Let’s connect to discuss how I can contribute!
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
