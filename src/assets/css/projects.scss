@@ -3,9 +3,14 @@
   text-align: center;
 }
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 1fr)); 
+  place-items: center;
+  // grid-template-columns: repeat(2, 1 fr);
+  // gap: 4rem;
+  // flex-wrap: wrap;
   justify-content: center;
+  // align-items: center;
   gap: 20px;
 }
 .project-card {

@@ -33,6 +33,20 @@ export default {
           description: "How trends on Netflix was changing with a time",
           link: "https://github.com/tanushikxd/netflix_dataset",
         },
+        {
+          id: 3,
+          title: "Student workbook",
+          description:
+            "Tried to get the best AVG mark, highlight the overal class grades",
+          link: "https://github.com/tanushikxd/student_lesson_example",
+        },
+        {
+          id: 4,
+          title: "GDP workbook",
+          description:
+            "Tried to compare GDP values in different countries, combined by region and selected TOP 10",
+          link: "https://github.com/tanushikxd/GDP_class_example",
+        },
       ],
     };
   },
