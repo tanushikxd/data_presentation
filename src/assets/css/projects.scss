@@ -26,9 +26,14 @@ a {
 }
 
 @media (max-width: 768px) {
-    .projects-list {
-      // grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-      // gap: 2rem;
-      display: grid;
-    }
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+
+@media (max-width: 480px) {
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+}
