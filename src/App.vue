@@ -3,6 +3,7 @@
     <header-component></header-component>
     <router-view></router-view>
     <background-component></background-component>
+    <footer-component></footer-component>
     <!-- <about-page></about-page>
     <projects-page></projects-page>
     <skills-page></skills-page>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import FooterComponent from "./modules/footer/Footer-component.vue";
 import HeaderComponent from "./modules/header/Header-component.vue";
 // import MainPage from "./modules/main/Main-page.vue";
 import BackgroundComponent from "./modules/main/Background-component.vue";
@@ -24,6 +26,7 @@ export default {
     HeaderComponent,
     // MainPage,
     BackgroundComponent,
+    FooterComponent,
     // ProjectsPage,
     // SkillsPage,
     // ElevatorComponents,

@@ -9,6 +9,7 @@ import Skills from "../modules/skills/Skills-page.vue";
 import Projects from "../modules/projects/Projects-page.vue";
 import Main from "../modules/main/Main-page.vue";
 import Contact from "../modules/contact/Contact-page.vue";
+import Footer from "../modules/footer/Footer-component.vue";
 
 export default new VueRouter({
   mode: "history",
@@ -42,6 +43,11 @@ export default new VueRouter({
       path: "/contact",
       name: "contact",
       component: Contact,
+    },
+    {
+      path: "/footer",
+      name: "footer",
+      component: Footer,
     },
   ],
 });
