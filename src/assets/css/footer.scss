@@ -1,4 +1,14 @@
-.footer{
-    background: #0f172a;
-      color: #fff;
+.footer {
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_wrap {
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
 }
