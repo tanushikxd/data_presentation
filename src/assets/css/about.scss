@@ -35,7 +35,6 @@
 //   }
 // }
 
-
 .about_container {
   display: flex;
   align-items: center;
@@ -45,7 +44,6 @@
   width: 100%;
   flex-wrap: wrap; /* for responsiveness */
 }
-
 
 .about_text {
   flex: 1;
@@ -74,7 +72,6 @@
   line-height: 1.6;
   overflow-y: auto;
 }
-
 
 .about_buttons {
   display: flex;
@@ -116,7 +113,6 @@
   }
 }
 
-
 .about_image {
   flex: 1;
   min-width: 300px;
@@ -132,28 +128,15 @@
   object-fit: cover;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 480px) {
   .about_container {
     flex-direction: column;
-  }
-
-  .about_title {
-    font-size: 2.2rem;
-  }
-
-  .about_text {
-    text-align: center;
-  }
-
-  .about_details-me_name-intro_text {
-    text-align: left;
-  }
-}
-
-@media (max-width: 480px) {
-   .about_container {
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .about_title {
