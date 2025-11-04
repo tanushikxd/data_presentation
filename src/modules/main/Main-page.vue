@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero_container">
       <div class="hero_photo">
-        <img src="@/assets/images/img/my_photo.jpg" alt="Tatyana Li" />
+        <img src="@/assets/images/img/my_photo-2.jpeg" alt="Tatyana Li" />
       </div>
 
       <div class="hero_text">
