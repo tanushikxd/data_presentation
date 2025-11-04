@@ -128,15 +128,13 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px), (max-width: 480px) {
+@media (max-width: 768px), (max-width: 480px), (max-width: 440px) {
+  .about{
+    padding: 0;
+  }
   .about_container {
     flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    width: 100%;
-    flex-wrap: wrap;
+    margin: auto 0;
   }
 
   .about_title {
