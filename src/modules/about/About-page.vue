@@ -50,7 +50,7 @@ export default {
 function downloadResume() {
   const link = document.createElement("a");
   link.href =
-    "https://docs.google.com/document/d/15tFmxWxvwr7qF2fmJexC66m1KwId4XsV/edit";
+    "https://drive.google.com/file/d/1wAlHm9C_yP2i9zfvlWTA1GcJomWpvRiu/view";
   link.download = "My CV";
   link.target = "_blank";
   link.click();
