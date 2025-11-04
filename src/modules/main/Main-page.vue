@@ -7,9 +7,7 @@
 
       <div class="hero_text">
         <h1 class="hero_title">Tatyana Li</h1>
-        <p class="hero_subtitle">
-          Junior Data Technician & Front-End Developer
-        </p>
+        <p class="hero_subtitle">Data Technician & Front-End Developer</p>
 
         <p class="hero_description">
           {{ currentText }}
