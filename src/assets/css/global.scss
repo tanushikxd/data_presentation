@@ -30,7 +30,7 @@ h6 {
   position: relative;
   display: inline-block; /* keeps the underline tight under the text */
   // width: fit-content;
-
+  margin-bottom: 4rem ;
   &::after {
     content: "";
     position: absolute;
