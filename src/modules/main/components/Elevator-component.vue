@@ -22,7 +22,6 @@
         movies, and I love to find different videos that encourage Women in
         Technology. I’m eager to apply my technical expertise and creative
         mindset in an entry-level data role to deliver impactful solutions.
-        Let’s connect to discuss how I can contribute!
       </p>
     </div>
   </div>

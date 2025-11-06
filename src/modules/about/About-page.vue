@@ -8,7 +8,7 @@
       <div class="about_text">
         <h2 class="about_details-me_name">Tatyana Li</h2>
         <p class="about_details-me_name-intro_text">
-          Hi, an enthusiastic and detail-oriented Junior Data Technician and
+          I am an enthusiastic and detail-oriented Junior Data Technician and
           Front-End Developer. I have a meaningful background in data handling,
           coding, and UX design, and I’m currently enhancing my skills through
           the Just IT Data Technician Bootcamp, where I’m diving deeper into
