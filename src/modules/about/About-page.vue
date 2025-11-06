@@ -22,7 +22,7 @@
           impact.
         </p>
         <div class="about_buttons">
-          <button @click="getElevator" class="btn">Learn about me</button>
+          <button @click="getElevator" class="btn">Learn more</button>
           <button @click="downloadResume" class="btn btn-secondary">
             Learn my CV
           </button>
